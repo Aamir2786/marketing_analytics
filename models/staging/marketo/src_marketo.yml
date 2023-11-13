@@ -1,0 +1,10 @@
+version: 2
+
+sources:
+  - name: salesforce_user
+    database: marketing
+    schema: google_sheets
+    tables:
+      - name: marketo_lead
+      - name: open_email
+      - name: click_email

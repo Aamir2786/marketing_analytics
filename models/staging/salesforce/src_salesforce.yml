@@ -7,6 +7,3 @@ sources:
     tables:
       - name: salesforce_user
       - name: salesforce_account
-      - name: marketo_lead
-      - name: open_email
-      - name: click_email
