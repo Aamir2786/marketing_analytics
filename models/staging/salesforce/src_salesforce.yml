@@ -1,7 +1,7 @@
 version: 2
 
 sources:
-  - name: salesforce_user
+  - name: salesforce
     database: marketing
     schema: google_sheets
     tables:
