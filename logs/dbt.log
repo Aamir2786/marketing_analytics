@@ -29,3 +29,31 @@ SystemExit: 1
 [0m15:57:49.899747 [info ] [MainThread]: Running with dbt=1.5.1
 [0m15:57:49.900506 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'version_check': 'True', 'quiet': 'False', 'log_path': 'logs', 'log_format': 'default', 'no_print': 'None', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True', 'cache_selected_only': 'False', 'indirect_selection': 'eager', 'partial_parse': 'True', 'use_colors': 'True', 'warn_error': 'None', 'fail_fast': 'False', 'log_cache_events': 'False', 'write_json': 'True', 'printer_width': '80', 'debug': 'False', 'use_experimental_parser': 'False', 'introspect': 'True', 'profiles_dir': '/Users/rapido/.dbt'}
 [0m15:58:50.098101 [debug] [MainThread]: Starter project path: /Users/rapido/Documents/GitHub/Marketing-Analytics-Solution-Using-Fivetran-and-dbt/dbt-env/lib/python3.7/site-packages/dbt/include/starter_project
+[0m16:14:18.293302 [error] [MainThread]: Encountered an error:
+
+[0m16:14:18.295430 [error] [MainThread]: Traceback (most recent call last):
+  File "/Users/rapido/Documents/GitHub/Marketing-Analytics-Solution-Using-Fivetran-and-dbt/dbt-env/lib/python3.7/site-packages/dbt/cli/requires.py", line 86, in wrapper
+    result, success = func(*args, **kwargs)
+  File "/Users/rapido/Documents/GitHub/Marketing-Analytics-Solution-Using-Fivetran-and-dbt/dbt-env/lib/python3.7/site-packages/dbt/cli/requires.py", line 71, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/rapido/Documents/GitHub/Marketing-Analytics-Solution-Using-Fivetran-and-dbt/dbt-env/lib/python3.7/site-packages/dbt/cli/main.py", line 457, in init
+    results = task.run()
+  File "/Users/rapido/Documents/GitHub/Marketing-Analytics-Solution-Using-Fivetran-and-dbt/dbt-env/lib/python3.7/site-packages/dbt/task/init.py", line 305, in run
+    self.create_profile_from_target(adapter, profile_name=project_name)
+  File "/Users/rapido/Documents/GitHub/Marketing-Analytics-Solution-Using-Fivetran-and-dbt/dbt-env/lib/python3.7/site-packages/dbt/task/init.py", line 180, in create_profile_from_target
+    self.create_profile_from_profile_template(profile_template, profile_name)
+  File "/Users/rapido/Documents/GitHub/Marketing-Analytics-Solution-Using-Fivetran-and-dbt/dbt-env/lib/python3.7/site-packages/dbt/task/init.py", line 164, in create_profile_from_profile_template
+    target = self.generate_target_from_input(prompts, initial_target)
+  File "/Users/rapido/Documents/GitHub/Marketing-Analytics-Solution-Using-Fivetran-and-dbt/dbt-env/lib/python3.7/site-packages/dbt/task/init.py", line 118, in generate_target_from_input
+    profile_template_local[key][choice], target
+  File "/Users/rapido/Documents/GitHub/Marketing-Analytics-Solution-Using-Fivetran-and-dbt/dbt-env/lib/python3.7/site-packages/dbt/task/init.py", line 131, in generate_target_from_input
+    text, default=default, hide_input=hide_input, type=type
+  File "/Users/rapido/Documents/GitHub/Marketing-Analytics-Solution-Using-Fivetran-and-dbt/dbt-env/lib/python3.7/site-packages/click/termui.py", line 164, in prompt
+    value = prompt_func(prompt)
+  File "/Users/rapido/Documents/GitHub/Marketing-Analytics-Solution-Using-Fivetran-and-dbt/dbt-env/lib/python3.7/site-packages/click/termui.py", line 147, in prompt_func
+    raise Abort() from None
+click.exceptions.Abort
+
+[0m16:14:18.297215 [debug] [MainThread]: Command `dbt init` failed at 16:14:18.296996 after 988.42 seconds
+[0m16:14:18.297775 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f856e884210>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f856e895250>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f856e895290>]}
+[0m16:14:18.298336 [debug] [MainThread]: Flushing usage events
