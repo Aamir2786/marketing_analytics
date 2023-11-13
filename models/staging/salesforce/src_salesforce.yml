@@ -2,7 +2,7 @@ version: 2
 
 sources:
   - name: salesforce
-    database: marketing
+    database: fivetran_database
     schema: google_sheets
     tables:
       - name: salesforce_user
