@@ -2,7 +2,7 @@ version: 2
 
 sources:
   - name: marketo
-    database: marketing
+    database: fivetran-not-applicable-8-e-3
     schema: google_sheets
     tables:
       - name: marketo_lead
