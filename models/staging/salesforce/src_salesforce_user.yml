@@ -2,6 +2,11 @@ version: 2
 
 sources:
   - name: salesforce_user
+    database: marketing
     schema: google_sheets
     tables:
       - name: salesforce_user
+      - name: salesforce_account
+      - name: marketo_lead
+      - name: open_email
+      - name: click_email
