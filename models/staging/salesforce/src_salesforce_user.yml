@@ -1,0 +1,7 @@
+version: 2
+
+sources:
+  - name: salesforce_user
+    schema: google_sheets
+    tables:
+      - name: salesforce_user
