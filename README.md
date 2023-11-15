@@ -1,15 +1,7 @@
-Welcome to your new dbt project!
+### Marketing Analytics Solution Using Fivetran and dbt
 
-### Using the starter project
+1. Firstly I ingested Salesforce and Marketo data present in Google sheets to Bigquery using Fivetran connectors as well as Destinations.
+2. I used dbt for the transformation, test and documentation required for the analysis. I created this repository to maintain data models for the analysis and also grant Fivetran access so that we can schedule our pipelines.
+3. Finally, I can define upstream Fivetran connectors as source, set up dbt to transform, clean and aggregate this data and schedule pipeline run in Fivetran against our Bigquery destinations.
 
-Try running the following commands:
-- dbt run
-- dbt test
-
-
-### Resources:
-- Learn more about dbt [in the docs](https://docs.getdbt.com/docs/introduction)
-- Check out [Discourse](https://discourse.getdbt.com/) for commonly asked questions and answers
-- Join the [chat](https://community.getdbt.com/) on Slack for live discussions and support
-- Find [dbt events](https://events.getdbt.com) near you
-- Check out [the blog](https://blog.getdbt.com/) for the latest news on dbt's development and best practices
+Later on, we can connect BI tools with Bigquery destinations to visualize our metrics.
