@@ -15,7 +15,7 @@ where
         select
             account_id
         from
-            {{ ref('stg_salesforce__user') }}
+            {{ ref('stg_salesforce_user') }}
         where
             email is not null and account_id is not null
     )
