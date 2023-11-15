@@ -13,7 +13,7 @@ with accounts as (
 )
 
 , opens_clicks_joined as (
-    select * from {{ ref('int_email_open_clicks_joined') }}
+    select * from {{ ref('int_email_opens_clicks_joined') }}
 )
 
 , joined as (
