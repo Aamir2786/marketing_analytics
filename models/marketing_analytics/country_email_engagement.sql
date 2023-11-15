@@ -9,7 +9,7 @@ with accounts as (
 	select
         lead_id,
         account_id
-	from {{ ref('dim_user') }}
+	from {{ ref('dim_users') }}
 )
 
 , opens_clicks_joined as (
