@@ -7,7 +7,7 @@ models:
       - name: account_id
         description: Primary key
         tests:
-          - not null
+          - not_null
           - unique
   - name: dim_users
     description: User dimension table
@@ -15,5 +15,5 @@ models:
       - name: lead_id
         description: Primary key
         tests:
-          - not null
+          - not_null
           - unique
